@@ -23,9 +23,8 @@
                 <div class="container">
                     <div class="header__inner">
                         <div class="logo">
-                            <img class="logo__img" src="./travel/img/logo-icon.svg"
-                                alt="TRAVEL PORTAL logotype">
-                            <span class="logo__text">Travel Portal</span>
+                            <img class="logo__img" src="./travel/img/logo-icon.svg" alt="TRAVEL PORTAL logotype">
+                            <span class="logo__text _hidden-mobile">Travel Portal</span>
                         </div>
 
                         <nav class="navigation">
@@ -45,7 +44,7 @@
                             </ul>
                         </nav>
 
-                        <button class="btn btn--blue header__btn-login">Login</button>
+                        <button class="btn btn--blue header__btn-login _hidden-mobile">Login</button>
                     </div>
                 </div>
             </header>
@@ -53,8 +52,9 @@
                 <section class="preview" id="preview">
                     <div class="container">
                         <div class="preview__content">
-                            <h1 class="preview__title">Explore the beauty of the World</h1>
-                            <p class="preview__subtitle">Receive personalized recommendations for countries,
+                            <h1 class="preview__title _hidden-mobile">Explore the beauty of the World</h1>
+                            <p class="preview__subtitle _hidden-mobile">Receive personalized recommendations for
+                                countries,
                                 hotels, activities and more</p>
 
                             <div class="preview__box">
@@ -67,7 +67,7 @@
 
                 <section class="steps" id="steps">
                     <div class="container">
-                        <h2 class="steps__title">3 STEPS TO THE PERFECT TRIP</h2>
+                        <h2 class="section-title steps__title">3 STEPS TO THE PERFECT TRIP</h2>
                         <div class="steps__items">
                             <div class="steps-item steps-item--first">
                                 <div class="steps-item__icon-wrapper">
@@ -108,22 +108,28 @@
 
                 <section class="destinations" id="destinations">
                     <div class="container">
-                        <h2 class="destinations__title">POPULAR DESTINATIONS</h2>
+                        <h2 class="section-title destinations__title">POPULAR DESTINATIONS</h2>
                     </div>
                     <div class="destinations-slider">
                         <div class="destinations-slider__item">
-                            <img class="destinations-slider__item-img" width="800" height="800"
+                            <img class="destinations-slider__item-img _hidden-visible" width="800" height="800"
                                 src="travel/img/slide-item1.jpg" alt="destination slide 1">
+                            <img class="destinations-slider__item-img _visible-mobile" width="360" height="210"
+                                src="travel/img/mobile/slide-item1-mobile.jpg" alt="destination slide 1">
                             <span class="destinations-slider__item-text">SPAIN</span>
                         </div>
                         <div class="destinations-slider__item">
-                            <img class="destinations-slider__item-img" width="800" height="800"
+                            <img class="destinations-slider__item-img _hidden-visible" width="800" height="800"
                                 src="travel/img/slide-item2.jpg" alt="destination slide 2">
+                            <img class="destinations-slider__item-img _visible-mobile" width="360" height="210"
+                                src="travel/img/mobile/slide-item2-mobile.jpg" alt="destination slide 2">
                             <span class="destinations-slider__item-text">JAPAN</span>
                         </div>
                         <div class="destinations-slider__item">
-                            <img class="destinations-slider__item-img" width="800" height="800"
+                            <img class="destinations-slider__item-img _hidden-visible" width="800" height="800"
                                 src="travel/img/slide-item3.jpg" alt=" destination slide 3">
+                            <img class="destinations-slider__item-img _visible-mobile" width="360" height="210"
+                                src="travel/img/mobile/slide-item3-mobile.jpg" alt="destination slide 3">
                             <span class="destinations-slider__item-text">USA</span>
                         </div>
                     </div>
@@ -141,10 +147,10 @@
                     </ul>
 
                     <div class="destinations__btn-wrapper">
-                        <button class="destinations__btn btn btn--blue">
+                        <button class="btn btn--blue">
                             <svg class="btn__icon" width="36" height="23" viewBox="0 0 36 23">
                                 <path
-                                    d="M0.5 11.5C0.5 11.1685 0.631696 10.8505 0.866116 10.6161C1.10054 10.3817 1.41848 10.25 1.75 10.25H31.2325L23.365 2.38499C23.1303 2.15028 22.9984 1.83193 22.9984 1.49999C22.9984 1.16805 23.1303 0.849708 23.365 0.614992C23.5997 0.380275 23.9181 0.248413 24.25 0.248413C24.5819 0.248413 24.9003 0.380275 25.135 0.614992L35.135 10.615C35.2514 10.7311 35.3438 10.869 35.4068 11.0209C35.4698 11.1728 35.5022 11.3356 35.5022 11.5C35.5022 11.6644 35.4698 11.8272 35.4068 11.9791C35.3438 12.1309 35.2514 12.2689 35.135 12.385L25.135 22.385C24.9003 22.6197 24.5819 22.7516 24.25 22.7516C23.9181 22.7516 23.5997 22.6197 23.365 22.385C23.1303 22.1503 22.9984 21.8319 22.9984 21.5C22.9984 21.1681 23.1303 20.8497 23.365 20.615L31.2325 12.75H1.75C1.41848 12.75 1.10054 12.6183 0.866116 12.3839C0.631696 12.1495 0.5 11.8315 0.5 11.5Z"/>
+                                    d="M0.5 11.5C0.5 11.1685 0.631696 10.8505 0.866116 10.6161C1.10054 10.3817 1.41848 10.25 1.75 10.25H31.2325L23.365 2.38499C23.1303 2.15028 22.9984 1.83193 22.9984 1.49999C22.9984 1.16805 23.1303 0.849708 23.365 0.614992C23.5997 0.380275 23.9181 0.248413 24.25 0.248413C24.5819 0.248413 24.9003 0.380275 25.135 0.614992L35.135 10.615C35.2514 10.7311 35.3438 10.869 35.4068 11.0209C35.4698 11.1728 35.5022 11.3356 35.5022 11.5C35.5022 11.6644 35.4698 11.8272 35.4068 11.9791C35.3438 12.1309 35.2514 12.2689 35.135 12.385L25.135 22.385C24.9003 22.6197 24.5819 22.7516 24.25 22.7516C23.9181 22.7516 23.5997 22.6197 23.365 22.385C23.1303 22.1503 22.9984 21.8319 22.9984 21.5C22.9984 21.1681 23.1303 20.8497 23.365 20.615L31.2325 12.75H1.75C1.41848 12.75 1.10054 12.6183 0.866116 12.3839C0.631696 12.1495 0.5 11.8315 0.5 11.5Z" />
                             </svg>
                             Find More
                         </button>
@@ -153,15 +159,18 @@
             </main>
         </div>
         <section class="stories" id="stories">
-            <h2 class="stories__title">TRAVEL STORIES</h2>
+            <h2 class="section-title stories__title">TRAVEL STORIES</h2>
             <div class="stories__wrapper">
                 <div class="stories__inner">
                     <div class="container">
                         <div class="stories-items">
                             <div class="stories-item">
                                 <div class="stories-item__img-wrapper">
-                                    <img class="stories-item__img" src="travel/img/stories-img1.jpg" width="400"
-                                        height="250" alt="stories 1">
+                                    <img class="stories-item__img _hidden-mobile" src="travel/img/stories-img1.jpg"
+                                        width="400" height="250" alt="stories 1">
+                                    <img class="stories-item__img _visible-mobile"
+                                        src="travel/img/mobile/stories-img1-mobile.jpg" width="155" height="130"
+                                        alt="stories 1">
                                 </div>
                                 <div class="stories-item__content">
                                     <h3 class="stories-item__title">10 Photos of Attractive Thailand</h3>
@@ -172,16 +181,19 @@
                                         Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
                                         fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
                                         culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit
-                                        amet, consectetur adipiscing elit... <br>
-                                        <a class="stories-item__link" href="#">Read More</a>
+                                        amet, consectetur adipiscing elit...
                                     </p>
+                                    <a class="stories-item__link" href="#">Read More</a>
                                 </div>
                             </div>
 
                             <div class="stories-item">
                                 <div class="stories-item__img-wrapper">
-                                    <img class="stories-item__img" src="travel/img/stories-img2.jpg" width="400"
-                                        height="250" alt="stories 2">
+                                    <img class="stories-item__img _hidden-mobile" src="travel/img/stories-img2.jpg"
+                                        width="400" height="250" alt="stories 2">
+                                    <img class="stories-item__img _visible-mobile"
+                                        src="travel/img/mobile/stories-img2-mobile.jpg" width="155" height="130"
+                                        alt="stories 2">
                                 </div>
                                 <div class="stories-item__content">
                                     <h3 class="stories-item__title">Canyonlands National Park, Utah</h3>
@@ -192,16 +204,19 @@
                                         Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
                                         fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
                                         culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit
-                                        amet, consectetur adipiscing elit... <br>
-                                        <a class="stories-item__link" href="#">Read More</a>
+                                        amet, consectetur adipiscing elit...
                                     </p>
+                                    <a class="stories-item__link" href="#">Read More</a>
                                 </div>
                             </div>
 
                             <div class="stories-item">
                                 <div class="stories-item__img-wrapper">
-                                    <img class="stories-item__img" src="travel/img/stories-img3.jpg" width="400"
-                                        height="250" alt="stories 3">
+                                    <img class="stories-item__img _hidden-mobile" src="travel/img/stories-img3.jpg"
+                                        width="400" height="250" alt="stories 3">
+                                    <img class="stories-item__img _visible-mobile"
+                                        src="travel/img/mobile/stories-img3-mobile.jpg" width="155" height="130"
+                                        alt="stories 3">
                                 </div>
                                 <div class="stories-item__content">
                                     <h3 class="stories-item__title">I left my heart in the Mountains!</h3>
@@ -212,16 +227,19 @@
                                         Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
                                         fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
                                         culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit
-                                        amet, consectetur adipiscing elit... <br>
-                                        <a class="stories-item__link" href="#">Read More</a>
+                                        amet, consectetur adipiscing elit...
                                     </p>
+                                    <a class="stories-item__link" href="#">Read More</a>
                                 </div>
                             </div>
 
                             <div class="stories-item">
                                 <div class="stories-item__img-wrapper">
-                                    <img class="stories-item__img" src="travel/img/stories-img4.jpg" width="400"
-                                        height="250" alt="stories 4">
+                                    <img class="stories-item__img _hidden-mobile" src="travel/img/stories-img4.jpg"
+                                        width="400" height="250" alt="stories 4">
+                                    <img class="stories-item__img _visible-mobile"
+                                        src="travel/img/mobile/stories-img4-mobile.jpg" width="155" height="130"
+                                        alt="stories 4">
                                 </div>
                                 <div class="stories-item__content">
                                     <h3 class="stories-item__title">The Longest journey in my life!</h3>
@@ -232,17 +250,17 @@
                                         Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
                                         fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
                                         culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit
-                                        amet, consectetur adipiscing elit... <br>
-                                        <a class="stories-item__link" href="#">Read More</a>
+                                        amet, consectetur adipiscing elit...
                                     </p>
+                                    <a class="stories-item__link" href="#">Read More</a>
                                 </div>
                             </div>
                         </div>
                         <div class="stories__btn-wrapper">
-                            <button class="stories__btn btn btn--blue">
+                            <button class="btn btn--blue">
                                 <svg class="btn__icon" width="36" height="23" viewBox="0 0 36 23">
                                     <path
-                                        d="M0.5 11.5C0.5 11.1685 0.631696 10.8505 0.866116 10.6161C1.10054 10.3817 1.41848 10.25 1.75 10.25H31.2325L23.365 2.38499C23.1303 2.15028 22.9984 1.83193 22.9984 1.49999C22.9984 1.16805 23.1303 0.849708 23.365 0.614992C23.5997 0.380275 23.9181 0.248413 24.25 0.248413C24.5819 0.248413 24.9003 0.380275 25.135 0.614992L35.135 10.615C35.2514 10.7311 35.3438 10.869 35.4068 11.0209C35.4698 11.1728 35.5022 11.3356 35.5022 11.5C35.5022 11.6644 35.4698 11.8272 35.4068 11.9791C35.3438 12.1309 35.2514 12.2689 35.135 12.385L25.135 22.385C24.9003 22.6197 24.5819 22.7516 24.25 22.7516C23.9181 22.7516 23.5997 22.6197 23.365 22.385C23.1303 22.1503 22.9984 21.8319 22.9984 21.5C22.9984 21.1681 23.1303 20.8497 23.365 20.615L31.2325 12.75H1.75C1.41848 12.75 1.10054 12.6183 0.866116 12.3839C0.631696 12.1495 0.5 11.8315 0.5 11.5Z"/>
+                                        d="M0.5 11.5C0.5 11.1685 0.631696 10.8505 0.866116 10.6161C1.10054 10.3817 1.41848 10.25 1.75 10.25H31.2325L23.365 2.38499C23.1303 2.15028 22.9984 1.83193 22.9984 1.49999C22.9984 1.16805 23.1303 0.849708 23.365 0.614992C23.5997 0.380275 23.9181 0.248413 24.25 0.248413C24.5819 0.248413 24.9003 0.380275 25.135 0.614992L35.135 10.615C35.2514 10.7311 35.3438 10.869 35.4068 11.0209C35.4698 11.1728 35.5022 11.3356 35.5022 11.5C35.5022 11.6644 35.4698 11.8272 35.4068 11.9791C35.3438 12.1309 35.2514 12.2689 35.135 12.385L25.135 22.385C24.9003 22.6197 24.5819 22.7516 24.25 22.7516C23.9181 22.7516 23.5997 22.6197 23.365 22.385C23.1303 22.1503 22.9984 21.8319 22.9984 21.5C22.9984 21.1681 23.1303 20.8497 23.365 20.615L31.2325 12.75H1.75C1.41848 12.75 1.10054 12.6183 0.866116 12.3839C0.631696 12.1495 0.5 11.8315 0.5 11.5Z" />
                                 </svg>
                                 See More
                             </button>
@@ -253,7 +271,7 @@
                     <div class="container">
                         <div class="footer__inner">
                             <div class="footer__box">
-                                <div class="school-logotype">
+                                <div class="school-logotype _hidden-mobile">
                                     <a class="school-logotype__link" href="https://rs.school/js-stage0/"
                                         target="_blank">
                                         <img class="school-logotype__img" src="travel/img/rs_school_logo.svg"
@@ -261,7 +279,8 @@
                                     </a>
                                 </div>
 
-                                <a class="footer__github" href="https://github.com/mahonya333" target="_blank">
+                                <a class="footer__github _hidden-mobile" href="https://github.com/mahonya333"
+                                    target="_blank">
                                     <!-- GITHUB -->
                                     <svg class="footer__github-icon" width="2500" height="2432" viewBox="0 0 256 249">
                                         <path
@@ -273,7 +292,7 @@
                                 </a>
                             </div>
 
-                            <p class="footer__copy">
+                            <p class="footer__copy _hidden-mobile">
                                 All Rights Reserved © Travel Portal
                             </p>
 
