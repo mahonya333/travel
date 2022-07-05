@@ -18,6 +18,7 @@
 <body>
 
     <div class="site-wrapper">
+        <div class="shadow-box"></div>
         <div class="site-content">
             <header class="header">
                 <div class="container">
@@ -27,7 +28,7 @@
                             <span class="logo__text _hidden-mobile">Travel Portal</span>
                         </div>
 
-                        <nav class="navigation">
+                        <nav class="navigation" id="navigation">
                             <ul class="navigation__list">
                                 <li class="navigation__list-item">
                                     <a class="navigation__list-link" href="#preview">How It Works</a>
@@ -41,10 +42,31 @@
                                 <li class="navigation__list-item">
                                     <a class="navigation__list-link" href="#stories">Travel Stories</a>
                                 </li>
+                                <li class="navigation__list-item navigation__list-item--tablet">
+                                    <a class="navigation__list-link  close-navigation" href="#">Account</a>
+                                </li>
+                                <li class="navigation__list-item navigation__list-item--tablet">
+                                    <a class="navigation__list-link" href="#footer">Social Media</a>
+                                </li>
                             </ul>
+                            <button class="btn navigation__close-btn" id="navigationCloseBtn">
+                                <svg width="16" height="16" viewBox="0 0 16 16">
+                                    <path d="M9.17506 8L15.2501 1.925C15.3866 1.76559 15.4579 1.56052 15.4498 1.35079C15.4417 1.14106 15.3548 0.942114 15.2064 0.793702C15.0579 0.64529 14.859 0.558345 14.6493 0.550245C14.4395 0.542144 14.2345 0.613482 14.0751 0.750004L8.00006 6.825L1.92506 0.741671C1.76564 0.605149 1.56058 0.533811 1.35085 0.541912C1.14112 0.550013 0.942169 0.636956 0.793757 0.785368C0.645345 0.93378 0.558401 1.13273 0.5503 1.34246C0.542199 1.55219 0.613538 1.75725 0.75006 1.91667L6.82506 8L0.741726 14.075C0.654491 14.1497 0.583641 14.2416 0.533622 14.345C0.483602 14.4484 0.455493 14.561 0.45106 14.6758C0.446628 14.7906 0.465966 14.905 0.507861 15.0119C0.549757 15.1189 0.613305 15.216 0.694518 15.2972C0.77573 15.3784 0.872853 15.442 0.97979 15.4839C1.08673 15.5258 1.20117 15.5451 1.31594 15.5407C1.4307 15.5362 1.54331 15.5081 1.6467 15.4581C1.75009 15.4081 1.84202 15.3372 1.91673 15.25L8.00006 9.175L14.0751 15.25C14.2345 15.3865 14.4395 15.4579 14.6493 15.4498C14.859 15.4417 15.0579 15.3547 15.2064 15.2063C15.3548 15.0579 15.4417 14.8589 15.4498 14.6492C15.4579 14.4395 15.3866 14.2344 15.2501 14.075L9.17506 8Z"/>
+                                    </svg>
+                                    
+                            </button>
                         </nav>
-
-                        <button class="btn btn--blue header__btn-login _hidden-mobile">Login</button>
+                        <button class="btn header__buger-btn" id="headerBurgerBtn">
+                            <svg class="header__buger-btn-icon" width="27" height="16" viewBox="0 0 27 16">
+                                <path
+                                    d="M25.2396 6.66667H1.76042C0.995272 6.66667 0.375 7.23378 0.375 7.93334V8.06667C0.375 8.76623 0.995272 9.33334 1.76042 9.33334H25.2396C26.0047 9.33334 26.625 8.76623 26.625 8.06667V7.93334C26.625 7.23378 26.0047 6.66667 25.2396 6.66667Z" />
+                                <path
+                                    d="M25.2396 13.3333H1.76042C0.995272 13.3333 0.375 13.9004 0.375 14.6V14.7333C0.375 15.4329 0.995272 16 1.76042 16H25.2396C26.0047 16 26.625 15.4329 26.625 14.7333V14.6C26.625 13.9004 26.0047 13.3333 25.2396 13.3333Z" />
+                                <path
+                                    d="M25.2396 0H1.76042C0.995272 0 0.375 0.567106 0.375 1.26667V1.4C0.375 2.09956 0.995272 2.66667 1.76042 2.66667H25.2396C26.0047 2.66667 26.625 2.09956 26.625 1.4V1.26667C26.625 0.567106 26.0047 0 25.2396 0Z" />
+                            </svg>
+                        </button>
+                        <button class="btn btn--blue header__btn-login">Login</button>
                     </div>
                 </div>
             </header>
@@ -112,21 +134,21 @@
                     </div>
                     <div class="destinations-slider">
                         <div class="destinations-slider__item">
-                            <img class="destinations-slider__item-img _hidden-visible" width="800" height="800"
+                            <img class="destinations-slider__item-img _hidden-mobile" width="800" height="800"
                                 src="travel/img/slide-item1.jpg" alt="destination slide 1">
                             <img class="destinations-slider__item-img _visible-mobile" width="360" height="210"
                                 src="travel/img/mobile/slide-item1-mobile.jpg" alt="destination slide 1">
                             <span class="destinations-slider__item-text">SPAIN</span>
                         </div>
                         <div class="destinations-slider__item">
-                            <img class="destinations-slider__item-img _hidden-visible" width="800" height="800"
+                            <img class="destinations-slider__item-img _hidden-mobile" width="800" height="800"
                                 src="travel/img/slide-item2.jpg" alt="destination slide 2">
                             <img class="destinations-slider__item-img _visible-mobile" width="360" height="210"
                                 src="travel/img/mobile/slide-item2-mobile.jpg" alt="destination slide 2">
                             <span class="destinations-slider__item-text">JAPAN</span>
                         </div>
                         <div class="destinations-slider__item">
-                            <img class="destinations-slider__item-img _hidden-visible" width="800" height="800"
+                            <img class="destinations-slider__item-img _hidden-mobile" width="800" height="800"
                                 src="travel/img/slide-item3.jpg" alt=" destination slide 3">
                             <img class="destinations-slider__item-img _visible-mobile" width="360" height="210"
                                 src="travel/img/mobile/slide-item3-mobile.jpg" alt="destination slide 3">
@@ -267,7 +289,7 @@
                         </div>
                     </div>
                 </div>
-                <footer class="footer">
+                <footer class="footer" id="footer">
                     <div class="container">
                         <div class="footer__inner">
                             <div class="footer__box">
