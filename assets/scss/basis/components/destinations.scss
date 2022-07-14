@@ -1,0 +1,94 @@
+.destinations {
+    padding: 2rem 0 4rem;
+    overflow: hidden;
+    background-color: $color-white;
+
+    @include breakpoint($mobile-width) {
+        position: relative;
+        padding: 1rem 1.6rem;
+    }
+
+    &__title {
+        margin-bottom: 4.5rem;
+
+        @include breakpoint($tablet-width) {
+            margin-bottom: 3rem;
+        }
+
+        @include breakpoint($mobile-width) {
+            margin-bottom: 2.1rem;
+        }
+    }
+
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0 0.8rem;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }   
+
+    &__nav-button {
+        padding: 0.3rem;
+    }
+
+    &__nav-button-icon {
+        fill: $color-burnt-sienna;
+    }
+
+    &__tabs {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        padding: 2.4rem 0 3.9rem;
+
+        @include breakpoint($mobile-width) {
+            gap: 0.6rem;
+            padding: 0;
+            position: absolute;
+            bottom: 1rem;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+        }
+    }
+
+    &__tabs-btn {
+        width: 2rem;
+        height: 2rem;
+        padding: 0;
+        border-radius: 50%;
+        background-color: $color-burnt-sienna;
+        opacity: 0.5;
+        transition: all 0.3s ease-in-out;
+
+        @include breakpoint($tablet-width) {
+            width: 1.4rem;
+            height: 1.4rem;
+        }
+
+        @include breakpoint($mobile-width) {
+            width: 0.8rem;
+            height: 0.8rem;
+        }
+
+        &:hover {
+            opacity: 1;
+        }
+
+        &._active {
+            opacity: 1;
+        }
+    }
+
+    &__btn-wrapper {
+        display: flex;
+        justify-content: center;
+
+        @include breakpoint($mobile-width) {
+            margin-top: 1rem;
+        }
+    }
+}

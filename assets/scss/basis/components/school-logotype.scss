@@ -1,0 +1,14 @@
+.school-logotype {
+    display: flex;
+
+    &__link {
+        transition: all .1s ease-in-out;
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+
+    &__img {
+        max-width: 7rem;
+    }
+}

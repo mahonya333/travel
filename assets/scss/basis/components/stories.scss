@@ -1,0 +1,45 @@
+.stories {
+    padding-top: 4rem;
+    background-color: $color-white;
+
+    @include breakpoint($mobile-width) {
+        padding-top: 1rem;
+    }
+
+    &__title {
+        margin-bottom: 4rem;
+
+        @include breakpoint($tablet-width) {
+            margin-bottom: 3rem;
+        }
+
+        @include breakpoint($mobile-width) {
+            margin-bottom: 1.3rem;
+        }
+    }
+
+    &__wrapper {
+        background-image: url("../../img/stories-bg.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        @include breakpoint($mobile-width) {
+            background-image: url("../../img/mobile/stories-bg-mobile.jpg");
+        }
+    }
+
+    &__inner {
+        padding: 4rem 0;
+        background-color: rgba(255, 255, 255, 0.7);
+
+        @include breakpoint($mobile-width) {
+            padding-top: 0.7rem;
+            padding-bottom: 1.3rem;
+        }
+    }
+
+    &__btn-wrapper {
+        display: flex;
+        justify-content: center;
+    }
+}
