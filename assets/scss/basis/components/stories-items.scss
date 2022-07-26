@@ -1,0 +1,11 @@
+.stories-items {
+    display: grid;
+    grid-gap: 2.8rem;
+    padding-bottom: 3.9rem;
+
+    
+    @include breakpoint($mobile-width) {
+        grid-gap: 1.5rem;
+        padding-bottom: 1.1rem;
+    }
+}

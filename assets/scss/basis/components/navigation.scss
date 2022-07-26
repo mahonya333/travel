@@ -1,0 +1,73 @@
+.navigation {
+    padding-right: 3.2rem; //Удалить свойства
+
+    @include breakpoint($tablet-width) {
+        position: absolute;
+        top: 0;
+        z-index: 50 ;
+        right: -16.5rem;
+        width: 16.5rem;
+        padding: 4.4rem 1.5rem 3rem 4.4rem;
+        border-radius: 10px;
+        text-align: right;
+        background-color: $color-burnt-sienna;
+        box-shadow: 0px 4px 3px rgba(13, 96, 111, 0.25);
+        transition: all .3s ease-in-out;
+
+        &._active {
+            right: 0;
+        }
+    }
+
+    &__list {
+        display: flex;
+        gap: 4.2rem;
+
+        @include breakpoint($tablet-width) {
+            flex-direction: column;
+            gap: 1rem;
+        }
+    }
+
+    &__list-item {
+        &--tablet {
+            display: none;
+
+            @include breakpoint($tablet-width) {
+                display: block;
+            }
+        }
+
+    }
+
+    &__list-link {
+        font-family: $RedHatText-Medium;
+        font-size: 1.6rem;
+        line-height: 1.3;
+        color: $color-white;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+            color: $color-blue-sapphire;
+        }
+    }
+
+    &__close-btn {
+        display: none;
+        padding: 0.2rem;
+        position: absolute;
+        top: 1.58rem;
+        left: 1.58rem;
+        opacity: 0.7;
+        fill: $color-white;
+        transition: all .3s ease-in-out;
+
+        &:hover {
+            fill: $color-blue-sapphire;
+        }
+
+        @include breakpoint($tablet-width) {
+            display: flex;
+        }
+    }
+}

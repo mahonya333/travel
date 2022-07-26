@@ -1,0 +1,53 @@
+//https://www.color-name.com/ генератор названия цвета
+$color-black: #000000;
+$color-white: #ffffff;
+$color-burnt-sienna: #F2785C;
+$color-blue-sapphire: #0D606F;
+$color-blue: #1877F2;
+
+
+
+$fonts-sans-serif:  BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+"Segoe UI Symbol";
+
+$fonts-serif: serif;
+
+
+
+$Aleo-Light: "Aleo-Light", $fonts-serif;
+$Aleo-Regular: "Aleo-Regular", $fonts-serif;
+$Aleo-Bold: "Aleo-Bold", $fonts-serif;
+
+
+$Aleo-LightItalic: "Aleo-LightItalic", $fonts-serif;
+$Aleo-RegularItalic: "Aleo-RegularItalic", $fonts-serif;
+$Aleo-BoldItalic: "Aleo-BoldItalic", $fonts-serif;
+
+
+$Magra-Regular: "Magra-Regular", $fonts-sans-serif;
+$Magra-Bold: "Magra-Bold", $fonts-sans-serif;
+
+
+$RedHatText-Light: "RedHatText-Light", $fonts-sans-serif;
+$RedHatText-Regular: "RedHatText-Regular", $fonts-sans-serif;
+$RedHatText-Medium: "RedHatText-Medium", $fonts-sans-serif;
+$RedHatText-SemiBold: "RedHatText-SemiBold", $fonts-sans-serif;
+$RedHatText-Bold: "RedHatText-Bold", $fonts-sans-serif;
+
+
+$RedHatText-LightItalic: "RedHatText-LightItalic", $fonts-sans-serif;
+$RedHatText-RegularItalic: "RedHatText-RegularItalic", $fonts-sans-serif;
+$RedHatText-MediumItalic: "RedHatText-MediumItalic", $fonts-sans-serif;
+$RedHatText-SemiBoldItalic: "RedHatText-SemiBoldItalic", $fonts-sans-serif;
+$RedHatText-BoldItalic: "RedHatText-BoldItalic", $fonts-sans-serif;
+
+
+$container-width: 124rem;
+$min-width: 32rem;
+
+
+$notebook-width: 1366px;
+$laptop-width: 1179px;
+$tablet-width: 1023px;
+$mobile-width: 767px;
+$mobile-width-small: 375px;
