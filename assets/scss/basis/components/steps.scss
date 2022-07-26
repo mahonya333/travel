@@ -1,0 +1,28 @@
+.steps {
+    padding: 8rem 0;
+    background-color: $color-white;
+
+    @include breakpoint($tablet-width) {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+
+    @include breakpoint($tablet-width) {
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+    }
+
+    &__title {
+        margin-bottom: 4rem;
+
+        @include breakpoint($mobile-width) {
+            margin-bottom: 2rem;
+        }
+    }
+
+    &__items {
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+}

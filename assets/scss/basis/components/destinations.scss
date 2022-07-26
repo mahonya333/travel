@@ -1,0 +1,33 @@
+.destinations {
+    padding: 2rem 0 4rem;
+    background-color: $color-white;
+    overflow: hidden;
+
+    @include breakpoint($mobile-width) {
+        position: relative;
+        padding: 1rem 1.6rem;
+    }
+
+    &__title {
+        margin-bottom: 4.5rem;
+
+        @include breakpoint($tablet-width) {
+            margin-bottom: 3rem;
+        }
+
+        @include breakpoint($mobile-width) {
+            margin-bottom: 2.1rem;
+        }
+    }
+
+    &__btn-wrapper {
+        display: flex;
+        justify-content: center;
+
+        @include breakpoint($mobile-width) {
+            margin-top: 1rem;
+        }
+    }
+}
+
+

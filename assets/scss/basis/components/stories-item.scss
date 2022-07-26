@@ -1,0 +1,91 @@
+.stories-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 3.9rem;
+
+    @include breakpoint($tablet-width) {
+        gap: 2rem;
+    }
+
+    @include breakpoint($mobile-width) {
+        gap: 1rem;
+    }
+
+    &__img {
+        display: block;
+        max-width: 40rem;
+        filter: drop-shadow(0px 4px 4px #0d606f);
+        border-radius: 16px;
+
+        @include breakpoint($tablet-width) {
+            max-width: 30rem;
+        }
+
+        @include breakpoint($mobile-width) {
+            max-width: 15.5rem;
+        }
+    }
+
+    &__content {
+        @include breakpoint($mobile-width) {
+            padding-top: 0.6rem;
+        }
+    }
+
+    &__title {
+        margin-bottom: 2.5rem;
+        font-size: 3.5rem;
+        line-height: 1.1;
+        color: $color-blue-sapphire;
+
+        @include breakpoint($tablet-width) {
+            margin-bottom: 1.5rem;
+            font-size: 2rem;
+        }
+
+        @include breakpoint($mobile-width) {
+            margin-bottom: 1.1rem;
+            font-family: $Aleo-Bold;
+            font-size: 1.1rem;
+        }
+    }
+
+    &__text {
+        display: -webkit-box;
+        font-size: 2rem;
+        -webkit-line-clamp: 6; // количество строк
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        color: $color-blue-sapphire;
+
+        @include breakpoint($tablet-width) {
+            font-size: 1.4rem;
+        }
+
+        @include breakpoint($mobile-width) {
+            -webkit-line-clamp: 8;
+            font-size: 0.9rem;
+        }
+    }
+
+    &__link {
+        font-family: $Aleo-Bold;
+        font-size: 2rem;
+        color: $color-blue-sapphire;
+        text-decoration: underline;
+        transition: all 0.3s ease-in-out;
+
+        @include breakpoint($tablet-width) {
+            font-size: 1.4rem;
+        }
+
+        @include breakpoint($mobile-width) {
+            font-size: 0.9rem;
+        }
+
+        &:hover {
+            color: $color-burnt-sienna;
+        }
+    }
+}

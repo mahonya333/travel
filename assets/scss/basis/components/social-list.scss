@@ -1,0 +1,15 @@
+.social-list {
+    display: flex;
+    align-items: center;
+    gap: 2.4rem;
+    padding-left: 1rem; //Удалить свойства
+
+    &__link {
+        display: inline-flex;
+        transition: all .3s ease-in-out;
+
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+}

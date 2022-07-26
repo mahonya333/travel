@@ -1,0 +1,15 @@
+.section-title {
+    font-family: $RedHatText-Medium;
+    font-size: 4rem;
+    line-height: 1.32;
+    text-align: center;
+    color: $color-burnt-sienna;
+
+    @include breakpoint($tablet-width) {
+        font-size: 3rem;
+    }
+
+    @include breakpoint($mobile-width) {
+        font-size: 1.4rem;
+    }
+}

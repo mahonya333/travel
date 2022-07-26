@@ -1,0 +1,106 @@
+.steps-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.8rem;
+
+    @include breakpoint($mobile-width) {
+        gap: 2rem;
+    }
+
+    &__icon-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 10rem;
+        height: 10rem;
+        border-radius: 16px;
+        background-color: $color-burnt-sienna;
+
+        @include breakpoint($tablet-width) {
+            width: 8rem;
+            height: 8rem;
+        }
+
+        @include breakpoint($mobile-width) {
+            width: 7rem;
+            height: 7rem;
+        }
+    }
+
+    &__text {
+        font-size: 2rem;
+        text-align: center;
+        color: $color-blue-sapphire;
+
+        @include breakpoint($tablet-width) {
+            font-size: 1.4rem;
+        }
+
+        @include breakpoint($mobile-width) {
+            font-size: 1rem;
+        }
+    }
+
+    &--first {//Удалить свойства
+        margin-left: 1rem;
+
+        @include breakpoint($mobile-width) {
+            align-items: flex-start;
+            max-width: 9.4rem;
+            margin-left: 0;
+        }
+
+        .steps-item__icon {
+            @include breakpoint($mobile-width) {
+                width: 3.5rem;
+                height: 3.2rem;
+            }
+        }
+
+        .steps-item__text {
+            @include breakpoint($mobile-width) {
+                text-align: left;
+            }
+        }
+    }
+
+    &--second {//Удалить свойства
+        margin-left: 7.1rem;
+
+        @include breakpoint($mobile-width) {
+            max-width: 12.1rem;
+            margin-left: 0;
+        }
+        
+        .steps-item__icon {
+            @include breakpoint($mobile-width) {
+                width: 3.5rem;
+                height: 3.5rem;
+            }
+        }
+    }
+
+    &--third {//Удалить свойства
+        margin-right: 1rem;
+
+        @include breakpoint($mobile-width) {
+            align-items: flex-end;
+            max-width: 9.8rem;
+            margin-right: 0;
+        }
+
+        .steps-item__icon {
+            @include breakpoint($mobile-width) {
+                width: 4rem;
+                height: 3rem;
+            }
+        }
+
+        .steps-item__text {
+            @include breakpoint($mobile-width) {
+                text-align: right;
+            }
+        }
+    }
+}

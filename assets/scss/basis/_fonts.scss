@@ -1,0 +1,33 @@
+/*
+    Пример подключения шрифта woff/woff2
+    https://css-tricks.com/snippets/css/using-font-face/
+*/
+
+/*Шрифт Aleo*/
+@include fontFace('Aleo-Light', '../../fonts/Aleo/Aleo-Light', 300);
+@include fontFace('Aleo-Regular', '../../fonts/Aleo/Aleo-Regular', 400);
+@include fontFace('Aleo-Bold', '../../fonts/Aleo/Aleo-Bold', 700);
+
+
+/*Шрифт Aleo Italic*/
+@include fontFace('Aleo-LightItalic', '../../fonts/Aleo/Aleo-LightItalic', 300, italic);
+@include fontFace('Aleo-RegularItalic', '../../fonts/Aleo/Aleo-Italic', 400, italic);
+@include fontFace('Aleo-BoldItalic', '../../fonts/Aleo/Aleo-BoldItalic', 700, italic);
+
+/*Шрифт Marga*/
+@include fontFace('Magra-Regular', '../../fonts/Magra/Magra-Regular', 400);
+@include fontFace('Magra-Bold', '../../fonts/Magra/Magra-Bold', 700);
+
+/*Шрифт RedHatText*/
+@include fontFace('RedHatText-Light', '../../fonts/RedHatText/RedHatText-Light', 300);
+@include fontFace('RedHatText-Regular', '../../fonts/RedHatText/RedHatText-Regular', 400);
+@include fontFace('RedHatText-Medium', '../../fonts/RedHatText/RedHatText-Medium', 500);
+@include fontFace('RedHatText-SemiBold', '../../fonts/RedHatText/RedHatText-SemiBold', 600);
+@include fontFace('RedHatText-Bold', '../../fonts/RedHatText/RedHatText-Bold', 700);
+
+/*Шрифт RedHatText Italic*/
+@include fontFace('RedHatText-LightItalic', '../../fonts/RedHatText/RedHatText-LightItalic', 300, italic);
+@include fontFace('RedHatText-RegularItalic', '../../fonts/RedHatText/RedHatText-Italic', 400, italic);
+@include fontFace('RedHatText-MediumItalic', '../../fonts/RedHatText/RedHatText-MediumItalic', 500, italic);
+@include fontFace('RedHatText-SemiBoldItalic', '../../fonts/RedHatText/RedHatText-SemiBoldItalic', 600, italic);
+@include fontFace('RedHatText-BoldItalic', '../../fonts/RedHatText/RedHatText-BoldItalic', 700, italic);
