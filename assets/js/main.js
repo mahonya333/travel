@@ -16,22 +16,33 @@ window.addEventListener('DOMContentLoaded', () => {
         toggleElementScroll('.site-wrapper');
         closeElement('#navigation');
         closeElement('.shadow-box');
+        closeElement('#modal');
     });
 
-    document.querySelector('.close-navigation').addEventListener('click', function (event) {//Ведущиая в никуда ссылка в меню навигации закрывающая меню навигации
+    document.querySelector('.open-modal').addEventListener('click', function (event) {//Ведущиая в никуда ссылка в меню навигации закрывающая меню навигации
         event.preventDefault();
         closeElement('#navigation');
-        closeElement('.shadow-box');
+        openElement('#modal');
+    });
+    document.querySelector('#openLoginForm').addEventListener('click', function (event) {//Ведущиая в никуда ссылка в меню навигации закрывающая меню навигации
+        event.preventDefault();
+        toggleElementScroll('.site-wrapper');
+        openElement('.shadow-box');
+        openElement('#modal');
+    });
+
+    document.querySelector('#modalRegisterBtn').addEventListener('click', function (event) {//Ведущиая в никуда ссылка в меню навигации закрывающая меню навигации
+        event.preventDefault();
+        openRegisterForm('#modal');
     });
 
     document.querySelector('#navigation')?.addEventListener('click', function (event) {//Навигация, где отслеживается клик по ссылке для закрытия самой навигации
-        const target = event.target
+        const target = event.target;
 
-        if (target.classList.contains('navigation__list-link')) {
+        if (target.classList.contains('navigation__list-link') && !target.classList.contains('open-modal')) {
             toggleElementScroll('.site-wrapper');
             closeElement('.shadow-box');
             closeElement('#navigation');
-
         }
     });
 
@@ -50,6 +61,8 @@ window.addEventListener('DOMContentLoaded', () => {
         // pagination
         pagination: {
             el: '.destinations-slider .destinations-slider__tabs',
+            bulletElement: 'li',
+            clickable: true
         },
 
         // Navigation arrows
@@ -66,6 +79,13 @@ window.addEventListener('DOMContentLoaded', () => {
     );
 });
 
+function openRegisterForm(element) {
+    document.querySelector(element).classList.add("_register");
+    document.querySelector('.modal__title').innerHTML="Create account";
+    document.querySelector('.modal__form-btn').innerHTML="Sign Up";
+    document.querySelector('.modal__footer-text').innerHTML="Already have an account?";
+    document.querySelector('#modalRegisterBtn').innerHTML="Log in";
+}
 
 function toggleElementScroll(element) {
     document.querySelector(element).classList.toggle("_false-scroll");
