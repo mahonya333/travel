@@ -1,7 +1,7 @@
 const { series, parallel, dest, watch, src } = require("gulp"),
     concat = require("gulp-concat"),
     concatCss = require("gulp-concat-css"),
-/*     autoprefixer = require("gulp-autoprefixer"), */
+    autoprefixer = require("gulp-autoprefixer"),
     uglifyjs = require("uglify-js"),
     composer = require("gulp-uglify/composer"),
     uglify = composer(uglifyjs, console),
@@ -21,8 +21,7 @@ function baseLibCss() {
 }
 
 function baseLibJs() {
-    return src("node_modules/jquery/dist/jquery.min.js")
-        .pipe(src("node_modules/handlebars/dist/handlebars.min.js"))
+    return src('node_modules/swiper/swiper-bundle.min.js')
         .pipe(concat("lib.js"))
         .pipe(dest("travel/base/js"))
         .pipe(gzip())
@@ -31,34 +30,25 @@ function baseLibJs() {
 
 function baseMainCss() {
     return src("assets/scss/basis/base-style.scss")
+        .pipe(src("node_modules/swiper/swiper-bundle.min.css"))
         .pipe(scss())
         .pipe(concat("main.css"))
-		.pipe(autoprefixer({
-			cascade: false
-		}))
+        .pipe(autoprefixer({
+            cascade: false
+        }))
         .pipe(cleanCSS())
         .pipe(dest("travel/base/css"))
         .pipe(gzip())
         .pipe(dest("travel/base/css"));
 }
 
-/* function baseMainJs() {
-    return src("assets/js/basis/notifications.js")
-        .pipe(src("assets/js/drugstore.js"))
-        .pipe(concat("index.js"))
-        .pipe(uglify())
-        .pipe(dest("travel/base/js"))
-        .pipe(gzip())
-        .pipe(dest("travel/base/js"));
-} */
-
 function homeMainCss() {
     return src("assets/scss/pages/home.scss")
         .pipe(scss())
         .pipe(concat("main.css"))
-		.pipe(autoprefixer({
-			cascade: false
-		}))
+        .pipe(autoprefixer({
+            cascade: false
+        }))
         .pipe(cleanCSS())
         .pipe(dest("travel/home/css"))
         .pipe(gzip())
@@ -103,7 +93,7 @@ function watching() {
     watch(["node_modules/**/*"], exports.compilingLibFiles);
 }
 
-exports.compilingLibFiles = parallel(baseLibCss);
+exports.compilingLibFiles = parallel(baseLibCss, baseLibJs);
 
 exports.compilingJsFiles = parallel(homeMainJs);
 exports.compilingCssFiles = parallel(baseMainCss, homeMainCss);
